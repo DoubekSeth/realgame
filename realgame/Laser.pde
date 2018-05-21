@@ -9,7 +9,7 @@ class Laser {
     r =10; 
     this.x =x;
     this.y = y;
-    speed = random(3,5);
+    speed = random(3, 5);
     c = color(255, 0, 0);
   }
   void shoot() {
@@ -26,13 +26,10 @@ class Laser {
   
   void display() {
     fill(c);
-    noStroke();
     for (int i = 2; i < r; i++) {
-      if(mr){
       //  x = 100;
        // y = 100;
       rect(x, y-2, 4, 10);
-      }
     }
   }
  
